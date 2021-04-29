@@ -1,0 +1,174 @@
+.reviews {
+  padding: 66px 0 156px;
+  background: #F7F7F7;
+
+  &__title {
+    margin-bottom: 52px;
+    font-weight: 600;
+    font-size: 4.2rem;
+    text-align: right;
+    color: #292929;
+
+    @media (max-width: 768px) {
+      text-align: center;
+    }
+  }
+
+  &__slider {
+    width: 100%;
+    position: relative;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+
+    .my-slick-prev{
+      bottom: 0;
+      left: calc(50% - 37px);
+      transform: translateX(-50%);
+    }
+    .my-slick-next{
+      bottom: 0;
+      left: calc(50% + 37px);
+      transform: translateX(-50%);
+    }
+  }
+
+  &__slide {
+    padding: 0px 0 50px;
+    border-radius: 30px;
+    position: relative;
+    outline: none;
+
+    &.slick-slide {
+      display: flex;
+      align-items: center;
+      padding-bottom: 80px;
+
+      @media (max-width: 768px) {
+        flex-direction: column;
+      }
+    }
+
+    &_img {
+      flex-grow: 1;
+      padding: 20% 0;
+      width: 100%;
+      box-shadow: 10px 15px 15px rgba(0, 0, 0, 0.4);
+      border-radius: 30px;
+      overflow: hidden;
+      position: relative;
+
+      @media (max-width: 768px) {
+        box-shadow: none;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 30px;
+        object-position: 50% 50%;
+        object-fit: cover;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(360deg, rgba(41, 41, 41, 0.94) 1.48%, rgba(41, 41, 41, 0) 26.11%);
+        filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.4));
+        border-radius: 30px;
+      }
+    }
+
+    &_card {
+      margin: 20px 20px 20px -80px;
+      padding: 30px 40px;
+      max-width: 590px;
+      width: calc(100% - 40px);
+      color: #292929;
+      text-align: center;
+      background: #FFFFFF;
+      box-shadow: 4px 5px 20px rgba(0, 0, 0, 0.4);
+      border-radius: 30px;
+
+      @media (max-width: 768px) {
+        margin: -40px 20px 0;
+        padding: 20px;
+
+      }
+    }
+
+    &_top {
+      display: flex;
+      align-items: center;
+    }
+
+    &_photo {
+      width: 100%;
+      height: 100px;
+      overflow: hidden;
+
+      @media (max-width: 768px) {
+        height: 75px;
+      }
+
+      img {
+        width: auto;
+        height: 100%;
+        margin: 0 auto;
+      }
+    }
+
+    &_name {
+      margin-top: 25px;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 2.4rem;
+      line-height: 2.9rem;
+
+      @media (max-width: 1366px) {
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+      }
+    }
+
+    &_company{
+      font-style: normal;
+      font-weight: 500;
+      font-size: 2.4rem;
+      line-height: 2.9rem;
+
+      @media (max-width: 1366px) {
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+      }
+    }
+
+    &_text {
+      font-weight: bold;
+      color: #292929;
+    }
+
+    &_title {
+      margin-top: 43px;
+      font-weight: bold;
+      font-size: 2.4rem;
+    }
+
+    &_descr {
+      margin-top: 15px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 2.4rem;
+      line-height: 162.4%;
+
+      @media (max-width: 1366px) {
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+      }
+    }
+  }
+}

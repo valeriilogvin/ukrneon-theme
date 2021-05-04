@@ -11,12 +11,12 @@ function jquery_script_method() {
 add_action( 'wp_enqueue_scripts', 'jquery_script_method' );
 
 function wood_scripts() {
-//	wp_enqueue_style(
-//		'wood-libsCSS',
-//		get_stylesheet_directory_uri() . '/css/libs.min.css',
-//		array(),
-//		'1.0'
-//	);
+	wp_enqueue_style(
+		'wood-libsCSS',
+		get_stylesheet_directory_uri() . '/css/libs.min.css',
+		array(),
+		'1.0'
+	);
 	wp_enqueue_style(
 		'wood-lightgallery',
 		'https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css',
@@ -31,34 +31,7 @@ function wood_scripts() {
 		'1.0'
 	);
 
-//	wp_enqueue_script(
-//		'wood-libs',
-//		get_template_directory_uri() . '/js/libs.min.js',
-//		array(),
-//		'1.1',
-//		true
-//	);
-	wp_enqueue_script(
-		'wood-slick',
-		get_template_directory_uri() . '/js/slick.min.js',
-		array(),
-		'1.0',
-		true
-	);
-	wp_enqueue_script(
-		'wood-lg-zoom',
-		get_template_directory_uri() . '/js/lg-zoom.min.js',
-		array(),
-		'1.0',
-		true
-	);
-	wp_enqueue_script(
-		'wood-lg-inputmask',
-		get_template_directory_uri() . '/js/jquery.inputmask.min.js',
-		array(),
-		'1.0',
-		true
-	);
+
 	wp_enqueue_script(
 		'wood-lg-lightgallery',
 		'https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js',
@@ -73,6 +46,13 @@ function wood_scripts() {
 		'1.0',
 		true
 	);
+    wp_enqueue_script(
+        'wood-libs',
+        get_template_directory_uri() . '/js/libs.min.js',
+        array(),
+        '1.1',
+        true
+    );
 	wp_enqueue_script(
 		'wood-mainJs',
 		get_template_directory_uri() . '/js/main.js',

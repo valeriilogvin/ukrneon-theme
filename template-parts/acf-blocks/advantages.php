@@ -4,9 +4,9 @@
     $advantages_item = get_row_layout('advantages_item');
 ?>
 
-<section class="advantages" style="background: linear-gradient(0deg,hsla(0,0%,6%,.84),hsla(0,0%,6%,.84)),url(<?php echo $advantages_bg?>) 50%/cover no-repeat;">
+<section class="advantages" style="background: linear-gradient(0deg,rgba(16,16,16,.6),rgba(16,16,16,.6)),url(<?php echo $advantages_bg?>) 50%/cover no-repeat;">
 	<div class="container">
-		<div class="advantages__heading heading heading--500 heading--c aud _anim-items _anim-off">
+		<div class="advantages__heading heading heading--500 aud _anim-items _anim-off">
             <?php echo $advantages_title ?>
 		</div>
 
@@ -20,16 +20,11 @@
 
                 echo '
                     <div class="advantages__item ascale _anim-items _anim-off">
-                        <div class="advantages__item_icon">
-                            <img src="'. $advantages_img .'" alt="">
+                        <div class="advantages__icon icon">
+                            <img class="icon__img" src="'. $advantages_img .'" alt="">
                         </div>
-                        <div class="advantages__item_text">
-                            <div class="advantages__item_title">
-                                '. $advantages_title .'
-                            </div>
-                            <div class="advantages__item_subtitle">
-                                 '. $advantages_text .'
-                            </div>
+                        <div class="advantages__text">
+                             '. $advantages_text .'
                         </div>
                     </div>
                     ';

@@ -9,8 +9,8 @@
 
     <section class="footer" id="footer">
         <div class="container">
-            <div class="footer__left">
-                <div class="footer__wrapper alr _anim-items _anim-off">
+            <div class="footer__inner">
+                <div class="footer__info alr _anim-items _anim-off">
                     <div class="footer__place">
                         <div class="footer__place_icon">
                             <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -35,7 +35,7 @@
                         <a class="footer__link" href="tel:<?php the_field('tel_2') ?>"><?php the_field('tel_2') ?></a><br>
                         <a class="footer__link" href="mailto:<?php the_field('email') ?>"><?php the_field('email') ?></a>
                     </div>
-
+        
                     <div class="footer__soc">
                         <a class="footer__soc_item" href="<?php the_field('instagram') ?>">
                             <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -51,55 +51,28 @@
                         </a>
                     </div>
                 </div>
+                
                 <div class="footer__map ascale _anim-items _anim-off">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d43967.39864697802!2d30.69461776930614!3d46.46925244159031!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c63324a0d44acb%3A0x879aac60c97c278a!2z0KjQvtGDLdCg0YPQvCDQo9Ca0KDQndCV0J7QnS3QotCV0KDQnNCe0JTQldCg0JXQktCeIC0g0LTQtdC60L7RgCDQuNC90YLQtdGA0YzQtdGA0LAg0Lgg0Y3QutGB0YLQtdGA0YzQtdGA0LA!5e0!3m2!1sru!2sua!4v1617197336662!5m2!1sru!2sua" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
-            </div>
-            <div class="footer__right arl _anim-items _anim-off">
-                <div class="form-block">
-                    <p class="form-block__title">
-                        У вас есть идея или фотография
-                        объекта который хотите реализовать?
-                    </p>
-                    <p class="form-block__subtitle">
-                        Заполните форму ниже и получите профессиональную консультацию специалиста  прямо сейчас
-                    </p>
-
+                
+                <div class="footer__form-block form-block arl _anim-items _anim-off">
+                    <p class="form-block__title" style="margin-bottom: 50px;">У ВАС ОСТАЛИСЬ ВОПРОСЫ? ЗАКАЖИТЕ ОБРАТНЫЙ ЗВОНОК</p>
+        
                     <form action="" class="form">
                         <input type="text" class="form__input" placeholder="Александр">
                         <input name="phone" type="tel"  class="form__input" placeholder="+380 __ ___ __ __">
-                        <submit class="form__submit">Получить консультацию</submit>
+                        <submit class="form__submit btn">Получить консультацию</submit>
                     </form>
                 </div>
             </div>
         </div>
     </section>
-    <div class="overlay">
-        <div class="modal" id="consultation">
-            <div class="header__form">
-                <div class="modal__logo"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/modallogo.svg" alt="modallogo"></div>
-                <div class="header__form_title">У вас есть идея или фотография
-                    объекта который хотите реализовать?</div>
-                <div class="header__form_subtitle">Заполните форму ниже<br>
-                    и получите бесплатную консультацию специалиста</div>
 
-                <script>!function(a,m,o,c,r,m){a[o+c]=a[o+c]||{setMeta:function(p){this.params=(this.params||[]).concat([p])}},a[o+r]=a[o+r]||function(f){a[o+r].f=(a[o+r].f||[]).concat([f])},a[o+r]({id:"763048",hash:"731fdd6a2afd2d5db3b63ca912a23e06",locale:"ru"})}(window,0,"amo_forms_","params","load");</script><script id="amoforms_script_763048" async="async" charset="utf-8" src="https://forms.amocrm.ru/forms/assets/js/amoforms.js?1617736173"></script>
-<!--                <form class="form">-->
-<!--                    <input class="formname" name="name" type="text" placeholder="Ваше имя" id="name">-->
-<!--                    <input class="formphone" name="phone" type="tel" placeholder="Ваш телефон" id="phone">-->
-<!--                    <button class="btn form__btn">-->
-<!--                        Получить консультацию-->
-<!--                    </button>-->
-<!--                </form>-->
-            </div>
-            <div class="modal__close">&times;</div>
-        </div>
-        <div class="modal modal_mini" id="thanks">
-            <div class="modal__close">&times;</div>
-            <div class="modal__subtitle">Спасибо за Вашу заявку!</div>
-            <div class="modal__descr">Наш менеджер свяжется с вами в ближайшее время!</div>
-        </div>
-    </div>
+    <?php get_template_part( 'template-parts/pushy'); ?>
+
+    <?php get_template_part( 'template-parts/modals'); ?>
+
 
 </div> <!-- <div class="page"> -->
 <?php wp_footer(); ?>

@@ -1,21 +1,5 @@
 /* Jquery */
 $(document).ready(function () {
-    /* burgermenu */
-    const menu = document.querySelector('.navbar__center'),
-        menuItems = document.querySelectorAll('.burger__link'),
-        hamburger = document.querySelector('.burger');
-
-    hamburger.addEventListener('click', () => {
-        hamburger.classList.toggle('active')
-        menu.classList.toggle('active')
-    });
-    menuItems.forEach(link => {
-        link.addEventListener('click', () => {
-            hamburger.classList.toggle('active')
-            menu.classList.toggle('active')
-        })
-    });
-
 
     // navmenu on scroll
     $(window).scroll(function () {
@@ -33,7 +17,7 @@ $(document).ready(function () {
         infinite: true,
         dots: false,
         arrows: true,
-        speed: 2000,
+        speed: 800,
         swipe: true,
         autoplay: true,
         pauseOnHover: false,
@@ -42,11 +26,13 @@ $(document).ready(function () {
         prevArrow: '<button type="button" class="my-slick-prev"></button>',
         nextArrow: '<button type="button" class="my-slick-next"></button>'
     });
+
     $('.js_docs_slider').slick({
         slidesToShow: 7,
         slidesToScroll: 1,
         infinite: true,
         dots: false,
+        speed: 800,
         arrows: true,
         autoplay: true,
         autoplaySpeed: 2000,
@@ -54,9 +40,15 @@ $(document).ready(function () {
         nextArrow: '<button type="button" class="my-slick-next"></button>',
         responsive: [
             {
-                breakpoint: 1024,
+                breakpoint: 1366,
                 settings: {
                     slidesToShow: 5
+                }
+            },
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 4
                 }
             },
             {
@@ -69,16 +61,14 @@ $(document).ready(function () {
     });
 
     $('.companies__slider').slick({
-        centerMode: true,
-        centerPadding: '11px',
-        slidesToShow: 5,
+        slidesToShow: 4,
         infinite: true,
         dots: false,
         arrows: true,
-        speed: 2000,
+        speed: 500,
         swipe: true,
         pauseOnHover: false,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 2000,
         prevArrow: '<button type="button" class="my-slick-prev"></button>',
         nextArrow: '<button type="button" class="my-slick-next"></button>',
@@ -97,23 +87,12 @@ $(document).ready(function () {
             }
         ]
     });
-    // const allSlides = [...document.querySelectorAll('.companies__slide')];
-    // const centerSlide = document.querySelector('.companies__slide.slick-center');
-    // let leftSlide;
-    // let rightSlide;
-    // const activeSlideIndex = allSlides.indexOf(centerSlide);
-    // function neighbors() {
-    //     rightSlide = allSlides[(activeSlideIndex + 1) % allSlides.length];
-    //     // leftSlide = allSlides[(activeSlideIndex - 1) % allSlides.length];
-    //     rightSlide.classList.add('rslide');
-    //     // leftSlide.classList.add('lslide');
-    // }
-    // neighbors();
+
     $('.warranty__slider').slick({
         infinite: true,
         dots: false,
         arrows: true,
-        speed: 2000,
+        speed: 800,
         swipe: true,
         autoplay: true,
         autoplaySpeed: 2000,
@@ -143,11 +122,12 @@ $(document).ready(function () {
             }
         ]
     });
+
     $('.reviews__slider').slick({
         infinite: true,
         dots: false,
         arrows: true,
-        speed: 2000,
+        speed: 800,
         swipe: true,
         adaptiveHeight: true,
         pauseOnHover: false,
@@ -175,58 +155,28 @@ $(document).ready(function () {
 
         $(this)
             .addClass('active')
-            .siblings().removeClass('active');
+            .siblings()
+            .removeClass('active');
 
         thisTabContainer
             .addClass('active')
-            .siblings().removeClass('active');
-    });
-    // modal
-
-    // header btns
-    $('.infoblock__btn, .nav__btn').on('click', function () {
-        $('.overlay, #consultation').fadeIn('slow');
-    });
-    $('.modal__close, .overlay').on('click', function () {
-        $('.overlay, #consultation, #thanks').fadeOut('slow');
+            .siblings()
+            .removeClass('active');
     });
 
 
-
-    // для вывода окна "подтверждение заявки"
-    // $('form').submit(function (e) {
-    //     e.preventDefault();/* отключаем перезагрузку страницы */
-    //     $(this).find("input").val("");
-    //     $('#consultation').fadeOut();
-    //     $('.overlay, #thanks').fadeIn('slow');
-    //     $('form').trigger('reset');
-    // });
-    // mailer
-    //   $('form').submit(function (e) {
-    //     e.preventDefault();/* отключаем перезагрузку страницы */
-    //     $.ajax({
-    //         type: "POST",
-    //         url: "mailer/smart.php",
-    //         data: $(this).serialize()
-    //     }).done(function () {
-    //         $(this).find("input").val("");
-    //         $('#consultation').fadeOut();
-    //         $('.overlay, #thanks').fadeIn('slow');
-
-    //         $('form').trigger('reset');
-    //     });
-    //     return false;
-    // });
     // маска телефон
     let inputs = document.querySelectorAll('input[type="tel"]');
     let im = new Inputmask('+38(999) 999-99-99');
     im.mask(inputs);
+
     // плавная прокрутка
     $("a[href]").click(function () {
         const _href = $(this).attr("href");
         $("html, body").animate({scrollTop: $(_href).offset().top + "px"});
         return false;
     });
+
     // Animations
     const animItems = document.querySelectorAll('._anim-items');
     if (animItems.length > 0) {

@@ -12,20 +12,20 @@
 <section class="partnership" id="partnership" style="background: linear-gradient(0deg, rgba(16, 16, 16, 0.65), rgba(16, 16, 16, 0.65)), url(<?php echo $partnership_bg ?>) center center/cover no-repeat;">
     <div class="container">
         <div class="partnership__inner">
-            <div class="form-block partnership__form-block">
+            <div class="form-block partnership__form-block alr _anim-items _anim-off">
                 <p class="form-block__title"><?php echo $partnership_form_title ?></p>
                 <p class="form-block__subtitle"><?php echo $partnership_form_subtitle ?></p>
 
                 <form action="" class="form">
                     <input type="text" class="form__input" placeholder="Александр">
                     <input name="phone" type="tel"  class="form__input" placeholder="+380 __ ___ __ __">
-                    <submit class="form__submit">Получить консультацию</submit>
+                    <submit class="form__submit btn">Получить консультацию</submit>
                 </form>
             </div>
 
             <div class="partnership__icon-block">
 
-                <p class="partnership__title"><?php echo $partnership_title ?></p>
+                <p class="partnership__heading heading heading--l heading--500 aud _anim-items _anim-off"><?php echo $partnership_title ?></p>
                 <p class="partnership__subtitle"><?php echo $partnership_subtitle ?></p>
 
                 <?php

@@ -2,16 +2,8 @@
   padding: 66px 0 156px;
   background: #F7F7F7;
 
-  &__title {
+  &__heading {
     margin-bottom: 52px;
-    font-weight: 600;
-    font-size: 4.2rem;
-    text-align: right;
-    color: #292929;
-
-    @media (max-width: 768px) {
-      text-align: center;
-    }
   }
 
   &__slider {
@@ -20,17 +12,6 @@
     border-radius: 30px;
     display: flex;
     justify-content: center;
-
-    .my-slick-prev{
-      bottom: 0;
-      left: calc(50% - 37px);
-      transform: translateX(-50%);
-    }
-    .my-slick-next{
-      bottom: 0;
-      left: calc(50% + 37px);
-      transform: translateX(-50%);
-    }
   }
 
   &__slide {
@@ -170,5 +151,16 @@
         line-height: 2.4rem;
       }
     }
+  }
+
+  .my-slick-prev{
+    bottom: 0;
+    left: calc(50% - 37px);
+    transform: translateX(-50%);
+  }
+  .my-slick-next{
+    bottom: 0;
+    left: calc(50% + 37px);
+    transform: translateX(-50%);
   }
 }

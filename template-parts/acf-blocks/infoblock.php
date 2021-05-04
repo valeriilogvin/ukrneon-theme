@@ -1,9 +1,8 @@
 <?php
 $section_title = get_sub_field( 'infoblock_section_title' );
-$position      = get_sub_field( 'infoblock_second' );
-$positionRight = get_sub_field('infoblock_second') == 'right';
 $positionLeft  = get_sub_field( 'infoblock_second') == 'left';
-$right         = get_sub_field( 'infoblock_second' );
+$left          = $positionLeft ? 'arl _anim-items _anim-off' : 'alr _anim-items _anim-off';
+$position         = get_sub_field( 'infoblock_second' );
 $title         = get_sub_field( 'infoblock_title' );
 $subtitle      = get_sub_field( 'infoblock_subtitle' );
 $description   = get_sub_field( 'infoblock_description' );
@@ -11,34 +10,20 @@ $types         = get_sub_field( 'infoblock_types' );
 $installation  = get_sub_field( 'infoblock_installation' );
 $gallery       = get_sub_field( 'infoblock_gallery' );
 $btnId         = get_sub_field( 'infoblock_btn_id' );
-$anchor_id         = get_sub_field( 'infoblock_anchor_id' );
+$anchor_id     = get_sub_field( 'infoblock_anchor_id' );
 ?>
 
-<section class="infoblock-wrapper <?php echo $right ?>" id="<?php echo $anchor_id ?>">
+<section class="infoblock <?php echo $position ?>" id="<?php echo $anchor_id ?>">
     <div class="container">
 
 		<?php
 		if ( $section_title ): ?>
-            <div class="infoblock-wrapper__heading heading heading--black heading--600 heading--c aud _anim-items _anim-off">
+            <div class="infoblock__heading heading heading--black heading--600 aud _anim-items _anim-off">
 				<?php echo $section_title ?>
             </div>
 		<?php endif; ?>
 
-        <div class="infoblock
-
-            <?php if ( $positionLeft ): ?>
-
-                arl _anim-items _anim-off
-
-            <?php else: ?>
-
-                alr _anim-items _anim-off
-
-            <?php endif ?>
-
-            <?php echo $right ?>
-
-        ">
+        <div class="infoblock__inner <?php echo $left ?> <?php echo $position ?> ">
             <div class="infoblock__slides infoblock__item">
 
                 <div class="infoblock__title">

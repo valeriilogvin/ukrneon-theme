@@ -140,15 +140,10 @@
   }
 
   &__heading {
-    margin-left: -70px;
     padding-bottom: 30px;
 
     @media (max-width: 1366px) {
       padding-bottom: 20px;
-    }
-
-    @media (max-width: 1024px) {
-      margin-left: 0;
     }
 
     @media (max-width: 768px) {

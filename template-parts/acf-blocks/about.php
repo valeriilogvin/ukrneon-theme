@@ -28,7 +28,7 @@
                 <!--            </a>-->
             </div>
             <div class="about__info arl _anim-items _anim-off">
-                <p class="about__heading heading heading--500 color--black"><?php echo $about_title?></p>
+                <p class="about__heading heading heading--l heading--500 color--black"><?php echo $about_title?></p>
                 <div class="about__text"><?php echo $about_text?></div>
             </div>
         </div>

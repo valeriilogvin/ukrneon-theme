@@ -10,7 +10,7 @@ $title_second = get_sub_field('lifestyle_title_second');
 ">
 	<div class="container">
 		<div class="lifestyle__inner">
-            <div class="lifestyle__heading heading heading--white heading--c heading--500 aud _anim-items _anim-off">
+            <div class="lifestyle__heading heading heading--white heading--500 aud _anim-items _anim-off">
                 <?php echo $title ?>
             </div>
 
@@ -25,7 +25,7 @@ $title_second = get_sub_field('lifestyle_title_second');
             <?php endif; ?>
 
 
-            <div class="lifestyle__heading heading heading--white heading--c heading--500 aud _anim-items _anim-off">
+            <div class="lifestyle__heading heading heading--white heading--500 aud _anim-items _anim-off">
                 <?php echo $title_second ?>
             </div>
 

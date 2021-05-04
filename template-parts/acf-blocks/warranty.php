@@ -1,11 +1,13 @@
 <?php
 $warranty_title = get_sub_field('warranty_title');
+$warranty_subtitle = get_sub_field('warranty_subtitle');
 $warranty_slide = get_row_layout('warranty_slide');
 ?>
 
 <section class="warranty">
     <div class="container">
-        <div class="warranty__title aud _anim-items _anim-off"><?php echo $warranty_title ?></div>
+        <p class="warranty__heading heading heading--black heading--600 heading--black aud _anim-items _anim-off"><?php echo $warranty_title ?></p>
+        <p class="warranty__subheading subheading subheading--black aud _anim-items _anim-off"><?php echo $warranty_subtitle ?></p>
 
         <?php if ($warranty_slide) {
             echo '<div class="warranty__slider alr _anim-items _anim-off">';

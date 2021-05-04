@@ -5,7 +5,7 @@
 
 <section class="reviews" id="reviews">
 	<div class="container">
-		<div class="reviews__title aud _anim-items _anim-off"><?php echo $reviews_title?></div>
+		<div class="reviews__heading heading heading--600 heading--black aud _anim-items _anim-off"><?php echo $reviews_title?></div>
             <?php
 
             if( $reviews_repeater ) {

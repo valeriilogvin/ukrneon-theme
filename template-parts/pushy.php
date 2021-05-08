@@ -14,30 +14,30 @@
 
         <ul class="pushy__menu">
             <li class="pushy__li">
-                <a class="pushy__link " href="#about">О нас</a>
+                <a class="pushy__link pushy-link " href="#about">О нас</a>
             </li>
             <li class="pushy__li">
-                <a class="pushy__link " href="#comprehensive">Комплекс</a>
+                <a class="pushy__link pushy-link " href="#comprehensive">Комплекс</a>
 
                 <!--<ul class="navbar__submenu">
-                    <li><a class="pushy__link navbar__subitem" href="#stena">Стеновые панели</a></li>
-                    <li><a class="pushy__link navbar__subitem" href="#3d_panel">3D Панели, Рейки</a></li>
-                    <li><a class="pushy__link navbar__subitem" href="#hpl">HPL Панели</a></li>
-                    <li><a class="pushy__link navbar__subitem" href="#fbc">Фиброцементные панели</a></li>
-                    <li><a class="pushy__link navbar__subitem" href="#tpkt">Термопакет</a></li>
-                    <li><a class="pushy__link navbar__subitem" href="#evr">Еврососна</a></li>
-                    <li><a class="pushy__link navbar__subitem" href="#injenier">Инженерная доска</a></li>
-                    <li><a class="pushy__link navbar__subitem" href="#glass">Стеклянные перегородки</a></li>
+                    <li><a class="pushy__link pushy-link navbar__subitem" href="#stena">Стеновые панели</a></li>
+                    <li><a class="pushy__link pushy-link navbar__subitem" href="#3d_panel">3D Панели, Рейки</a></li>
+                    <li><a class="pushy__link pushy-link navbar__subitem" href="#hpl">HPL Панели</a></li>
+                    <li><a class="pushy__link pushy-link navbar__subitem" href="#fbc">Фиброцементные панели</a></li>
+                    <li><a class="pushy__link pushy-link navbar__subitem" href="#tpkt">Термопакет</a></li>
+                    <li><a class="pushy__link pushy-link navbar__subitem" href="#evr">Еврососна</a></li>
+                    <li><a class="pushy__link pushy-link navbar__subitem" href="#injenier">Инженерная доска</a></li>
+                    <li><a class="pushy__link pushy-link navbar__subitem" href="#glass">Стеклянные перегородки</a></li>
                 </ul>-->
             </li>
+<!--            <li class="pushy__li">-->
+<!--                <a class="pushy__link pushy-link " href="#reviews">Фотостудия</a>-->
+<!--            </li>-->
             <li class="pushy__li">
-                <a class="pushy__link " href="#reviews">Фотостудия</a>
+                <a class="pushy__link pushy-link " href="#partnership">Партнерство</a>
             </li>
             <li class="pushy__li">
-                <a class="pushy__link " href="#footer">Партнерство</a>
-            </li>
-            <li class="pushy__li">
-                <a class="pushy__link " href="#contacts">Контакты</a>
+                <a class="pushy__link pushy-link " href="#footer">Контакты</a>
             </li>
         </ul>
 

@@ -34,91 +34,6 @@
     transform: translateX(-50%);
   }
 
-  &__gallery {
-    margin-top: 89px;
-    display: flex;
-    justify-content: space-between;
-
-    &_block1 {
-      min-width: 570px;
-      height: 868px;
-      margin-right: 47px;
-
-      .lifestyle__gallery_photo {
-        display: block;
-        width: 100%;
-        height: 100%;
-        border-radius: 30px;
-        position: relative;
-      }
-    }
-
-    &_block2 {
-      margin-right: 36px;
-      min-width: 723px;
-      height: 868px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-
-      .lifestyle__gallery_photo {
-        display: block;
-        width: 100%;
-        height: 417px;
-        border-radius: 30px;
-        position: relative;
-      }
-    }
-
-    &_block3 {
-      min-width: 424px;
-      height: 868px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-
-      .lifestyle__gallery_photo {
-        display: block;
-        width: 100%;
-        height: 417px;
-        border-radius: 30px;
-        position: relative;
-      }
-    }
-
-    &_photo {
-      overflow: hidden;
-
-      img {
-        border-radius: 30px;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: 50% 50%;
-        transition: all .2s ease;
-      }
-
-      &:hover {
-        img {
-          filter: drop-shadow(5px 5px 15px #000000) brightness(70%);
-          transition: all .2s ease;
-        }
-
-        &::after {
-          content: '';
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -30%);
-          width: 56px;
-          height: 56px;
-          background: url("data:image/svg+xml,%3Csvg width='52' height='52' viewBox='0 0 52 52' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M22.5 43.5C34.098 43.5 43.5 34.098 43.5 22.5C43.5 10.902 34.098 1.5 22.5 1.5C10.902 1.5 1.5 10.902 1.5 22.5C1.5 34.098 10.902 43.5 22.5 43.5Z' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M38.25 38.25L50.5 50.5' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M15.5 22.5H29.5M22.5 15.5V29.5V15.5Z' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A") center center/contain no-repeat;
-          transition: all .2s ease;
-        }
-      }
-    }
-  }
-
   &__photos {
     margin-top: 40px;
     display: grid;
@@ -174,6 +89,7 @@
     }
 
     &::after {
+      display: none;
       content: '';
       position: absolute;
       top: 50%;
@@ -183,10 +99,6 @@
       height: 56px;
       background: url("data:image/svg+xml,%3Csvg width='52' height='52' viewBox='0 0 52 52' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M22.5 43.5C34.098 43.5 43.5 34.098 43.5 22.5C43.5 10.902 34.098 1.5 22.5 1.5C10.902 1.5 1.5 10.902 1.5 22.5C1.5 34.098 10.902 43.5 22.5 43.5Z' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M38.25 38.25L50.5 50.5' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M15.5 22.5H29.5M22.5 15.5V29.5V15.5Z' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A") center center/contain no-repeat;
       transition: all .2s ease;
-
-      @media (min-width: 769px) {
-        display: none;
-      }
     }
 
     img {
@@ -210,15 +122,11 @@
       }
 
       &::after {
-        content: '';
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -30%);
-        width: 56px;
-        height: 56px;
-        background: url("data:image/svg+xml,%3Csvg width='52' height='52' viewBox='0 0 52 52' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M22.5 43.5C34.098 43.5 43.5 34.098 43.5 22.5C43.5 10.902 34.098 1.5 22.5 1.5C10.902 1.5 1.5 10.902 1.5 22.5C1.5 34.098 10.902 43.5 22.5 43.5Z' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M38.25 38.25L50.5 50.5' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M15.5 22.5H29.5M22.5 15.5V29.5V15.5Z' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A") center center/contain no-repeat;
-        transition: all .2s ease;
+        display: block;
+
+        @media (max-width: 769px) {
+          display: none;
+        }
       }
     }
   }

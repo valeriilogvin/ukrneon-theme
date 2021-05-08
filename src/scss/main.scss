@@ -1,6 +1,4 @@
-@import "libs/resetcss";
-@import "libs/slick";
-
+@import "resetcss";
 @import "global";
 @import "components/about";
 @import "components/advantages";
@@ -18,3 +16,7 @@
 @import "components/partnership";
 @import "components/pushy";
 @import "animations";
+
+// wp
+@import "modal";
+@import "cf7";

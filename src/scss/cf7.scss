@@ -1,0 +1,30 @@
+.wpcf7-form-control-wrap {
+  margin-bottom: 40px;
+
+  @media (max-width: 1366px) {
+    margin-bottom: 25px;
+  }
+}
+
+.use-floating-validation-tip .wpcf7-not-valid-tip {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: 1px solid #e31e24;
+  width: 100%;
+  border-radius: 20px;
+  background: #fff;
+  outline: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 5rem;
+  text-align: center;
+  color: rgba(0,0,0,.6);
+}
+
+.wpcf7 form .wpcf7-response-output{
+  display: none !important;
+}

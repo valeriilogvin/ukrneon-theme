@@ -59,7 +59,7 @@
                 <div class="footer__form-block form-block arl _anim-items _anim-off">
                     <p class="form-block__title" style="margin-bottom: 50px;">У ВАС ОСТАЛИСЬ ВОПРОСЫ? ЗАКАЖИТЕ ОБРАТНЫЙ ЗВОНОК</p>
     
-                    <?php echo do_shortcode( ' [contact-form-7 id="180" title="Контактная форма" html_class="use-floating-validation-tip form"] ' ); ?>
+                    <?php echo do_shortcode( ' [contact-form-7 id="259" title="Остались вопросы" html_class="use-floating-validation-tip form"] ' ); ?>
     
                     <!--<form action="" class="form">
                         <input type="text" class="form__input" placeholder="Александр">

@@ -16,7 +16,7 @@
                 <p class="form-block__title"><?php echo $partnership_form_title ?></p>
                 <p class="form-block__subtitle"><?php echo $partnership_form_subtitle ?></p>
     
-                <?php echo do_shortcode( ' [contact-form-7 id="180" title="Контактная форма" html_class="use-floating-validation-tip form"] ' ); ?>
+                <?php echo do_shortcode( ' [contact-form-7 id="258" title="Форма партнерство" html_class="use-floating-validation-tip form"] ' ); ?>
     
                 <!--<form action="" class="form">
                     <input type="text" class="form__input" placeholder="Александр">

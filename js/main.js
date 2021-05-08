@@ -10,7 +10,6 @@ $(document).ready(function () {
         }
     });
 
-
     // slick-sliders
     $('.infoblock__slider').slick({
         slidesToShow: 1,
@@ -225,6 +224,10 @@ $(document).ready(function () {
         }, 300);
     }
 });
+
+function infoInputSet(text){
+    $('.js_input_info').val(text)
+}
 
 // redirect on page-thanks
 document.addEventListener('wpcf7mailsent', function (event) {

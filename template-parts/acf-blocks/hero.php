@@ -60,7 +60,7 @@ $hero_form_subtitle = get_sub_field('hero_form_subtitle');
                         Заполните форму ниже и получите профессиональную консультацию специалиста  прямо сейчас
                     </p>
     
-                    <?php echo do_shortcode( ' [contact-form-7 id="180" title="Контактная форма" html_class="use-floating-validation-tip form"] ' ); ?>
+                    <?php echo do_shortcode( ' [contact-form-7 id="180" title="Форма в hero" html_class="use-floating-validation-tip form"] ' ); ?>
     
 <!--                    <form action="" class="form">
                         <input type="text" class="form__input" placeholder="Александр">

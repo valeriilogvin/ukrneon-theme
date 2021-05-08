@@ -10,7 +10,7 @@
                 Заполните форму ниже и получите профессиональную консультацию специалиста  прямо сейчас
             </p>
 
-            <?php echo do_shortcode( ' [contact-form-7 id="180" title="Контактная форма" html_class="use-floating-validation-tip form"] ' ); ?>
+            <?php echo do_shortcode( ' [contact-form-7 id="260" title="Форма в модальном окне" html_class="use-floating-validation-tip form"] ' ); ?>
 
             <!--                    <form action="" class="form">
                                     <input type="text" class="form__input" placeholder="Александр">

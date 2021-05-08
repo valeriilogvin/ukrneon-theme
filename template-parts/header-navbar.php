@@ -38,7 +38,7 @@
                 <span class="navbar__city">г.Одесса</span>
             </div>
 
-            <button id="header_btn" data-modal="modal-form" class="md-trigger btn navbar__btn">Получить консультацию</button>
+            <button id="header_btn" onclick="infoInputSet('Кнопка в хедере')" data-modal="modal-form" class="md-trigger btn navbar__btn">Получить консультацию</button>
 
             <button class="navbar__burger-btn menu-btn">
                 <span></span>

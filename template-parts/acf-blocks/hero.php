@@ -59,12 +59,14 @@ $hero_form_subtitle = get_sub_field('hero_form_subtitle');
                     <p class="form-block__subtitle">
                         Заполните форму ниже и получите профессиональную консультацию специалиста  прямо сейчас
                     </p>
-
-                    <form action="" class="form">
+    
+                    <?php echo do_shortcode( ' [contact-form-7 id="180" title="Форма в hero" html_class="use-floating-validation-tip form"] ' ); ?>
+    
+<!--                    <form action="" class="form">
                         <input type="text" class="form__input" placeholder="Александр">
                         <input name="phone" type="tel"  class="form__input" placeholder="+380 __ ___ __ __">
                         <submit class="form__submit btn">Получить консультацию</submit>
-                    </form>
+                    </form>-->
                 </div>
             </div>
         </div>

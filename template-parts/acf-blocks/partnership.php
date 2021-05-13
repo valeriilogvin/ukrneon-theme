@@ -15,12 +15,14 @@
             <div class="form-block partnership__form-block alr _anim-items _anim-off">
                 <p class="form-block__title"><?php echo $partnership_form_title ?></p>
                 <p class="form-block__subtitle"><?php echo $partnership_form_subtitle ?></p>
-
-                <form action="" class="form">
+    
+                <?php echo do_shortcode( ' [contact-form-7 id="258" title="Форма партнерство" html_class="use-floating-validation-tip form"] ' ); ?>
+    
+                <!--<form action="" class="form">
                     <input type="text" class="form__input" placeholder="Александр">
                     <input name="phone" type="tel"  class="form__input" placeholder="+380 __ ___ __ __">
                     <submit class="form__submit btn">Получить консультацию</submit>
-                </form>
+                </form>-->
             </div>
 
             <div class="partnership__icon-block">

@@ -140,12 +140,18 @@ $(document).ready(function () {
     });
 
     // lightgallery
-    lightGallery(document.querySelector('.lifestyle__photos'));
+    let $lifestylePhotos = document.querySelector('.lifestyle__photos');
 
-    let $docGallery = document.querySelector('.js_docs_slider'),
-        docSlider = $docGallery.querySelector('.slick-track');
+    if($lifestylePhotos){
+        lightGallery($lifestylePhotos);
+    }
 
-    lightGallery(docSlider);
+    let $docGallery = document.querySelector('.js_docs_slider');
+
+    if($docGallery){
+        let docSlider = $docGallery.querySelector('.slick-track');
+        lightGallery(docSlider);
+    }
 
     // tabs
     $('.infoblock__tab').on('click', function () {
@@ -219,3 +225,8 @@ $(document).ready(function () {
         }, 300);
     }
 });
+
+// redirect on page-thanks
+document.addEventListener('wpcf7mailsent', function (event) {
+    window.location = window.location.hostname + '/page-thanks'
+}, false);

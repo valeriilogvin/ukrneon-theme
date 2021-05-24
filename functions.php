@@ -68,5 +68,6 @@ function the_acf_loop(){
 	get_template_part('template-parts/loop/acf-blocks','loop');
 }
 
-
 add_filter('wpcf7_autop_or_not', '__return_false');
+
+get_template_part( 'inc/bitrix', 'integration' );
